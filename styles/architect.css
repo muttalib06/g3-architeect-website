@@ -214,6 +214,7 @@ main{
         display: grid;
         grid-template-columns: repeat(5,1fr);
         justify-content: center;
+        column-gap: 60px;
         align-items: center;
         margin-top: 40px;
 }
@@ -311,6 +312,10 @@ footer{
                 
                
                 
+        }
+         .sponsor-img{
+                grid-template-columns: repeat(2,1fr);
+                gap: 30px;
         }
             
         
