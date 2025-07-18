@@ -21,13 +21,22 @@
 .dark-1{
         color: #131313;
 }
+.dark-3{
+        color: #727272;
+}
 .primary-btn{
         background-color: #FF900E;
         color: white;
+        font-weight: 600;
+        font-size: 1.25rem;
         padding: 20px 25px;
         border: none;
         border-radius: 8px;
 
+}
+.section-title {
+        font-size: 2.8rem;
+        font-weight: 700;
 }
 /* header styles */
 header{
@@ -84,11 +93,54 @@ header{
         margin-bottom:10px ;
 }
 
+
+/* main section styles */
+section{
+        margin-top: 130px;
+}
+main{
+        padding: 0 240px;
+}
+
+/* team related style */
+.team{
+        display: flex;
+        align-items: center;
+}
+.team-img-container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 15px;
+
+}
+.team-img-container img{
+        width: 100%;
+        border-radius: 8px;
+}
+.team-text-container{
+        margin-left: 100px;
+}
+.team-title,.team-description{
+        margin-bottom: 20px;
+}
+.quick-list{
+        font-size: 600;
+        font-weight: 500;
+        color: #727272;
+}
+.feature-font{
+        color: #FF900E;
+}
+
 /* responsive styles */
 
 @media screen and (max-width:576px){
         header{
                 padding: 20px 20px;
+        }
+        main{
+                padding: 20px 20px;
+
         }
         .nav-bar{
                 flex-direction: column;
@@ -97,11 +149,45 @@ header{
         .nav-link-container{
                 flex-direction: column;
         }
+        .team{
+                flex-direction: column;
+        }
+        .team-img-container{
+                grid-template-columns: 1fr;
+        }
+        .team-text-container{
+                margin-top: 30px;
+        }
+        
 }
 
 /* medium device responsive */
 @media screen and (min-width:576px) and (max-width:992px){
         header{
                 padding: 40px 40px;
+        }
+        main{
+                 padding: 40px 40px;
+        }
+        
+}
+
+@media screen and (min-width:576px) and (max-width:1051px){
+            header{
+                padding: 40px 40px;
+        }
+         main{
+                 padding: 40px 40px;
+        }
+        
+        .team{
+                flex-direction: column;
+        }
+        .team-img-container{
+                grid-template-columns: repeat(2,1fr);
+                  
+        }
+        .team-text-container{
+                margin-top: 30px;
         }
 }
